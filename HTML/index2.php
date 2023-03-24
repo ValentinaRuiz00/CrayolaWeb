@@ -1,3 +1,11 @@
+<?php
+session_start();
+$usuario = $_SESSION['usuario'];
+if(!isset($_SESSION['usuario'])){
+  header('location: ../index.html');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,7 +34,7 @@
             <div class="nav-wrapper">
               <img src="../imagenes/crayola3.png" width="150rem" class="logo2" />
               <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="../index.html">Salir</a></li>
+                <li><a href="../PHP/cerrarSesion.php">Salir</a></li>
               </ul>
             </div>
           </div>

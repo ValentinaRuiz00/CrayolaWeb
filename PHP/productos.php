@@ -1,4 +1,10 @@
 <?php
+session_start();
+$usuario = $_SESSION['usuario'];
+if(!isset($_SESSION['usuario'])){
+  header('location: ../index.html');
+}
+
 include "conexionBasesDatos.php";
 
 $objConexion = new mysqli($host, $user, $password, $baseDatos);
@@ -35,7 +41,7 @@ $resultado = $objConexion->query($sql);
                     <div class="nav-wrapper">
                         <img src="../imagenes/crayola3.png" width="150rem" class="logo2">
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="../index.html">Salir</a></li>
+                            <li><a href="../PHP/cerrarSesion.php">Salir</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,7 +49,7 @@ $resultado = $objConexion->query($sql);
             <div class="col s2 prueba1">
                 <div class="row prueba3">
                     <a href="../HTML/index1.html" class="waves-effect waves-light btn-small opciones"><i class="material-icons right">first_page</i>Opciones</a>
-                    <a href="../HTML/index2.html" class="waves-effect waves-light btn-small menubtn"><i class="material-icons left">home</i>Inicio</a>
+                    <a href="../HTML/index2.php" class="waves-effect waves-light btn-small menubtn"><i class="material-icons left">home</i>Inicio</a>
                     <a href="../PHP/productos.php" class="waves-effect waves-light btn-small menubtn"><i class="material-icons left">shopping_basket</i>Productos</a>
                     <a href="../HTML/categorias.html" class="waves-effect waves-light btn-small menubtn"><i class="material-icons left">apps</i>Categorías</a>
                     <a href="../HTML/clientes.html" class="waves-effect waves-light btn-small menubtn"><i class="material-icons left">people</i>Clientes</a>
