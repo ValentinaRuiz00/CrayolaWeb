@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/estiloinicio.css" />
+    <link rel="stylesheet" href="http://localhost/proyectoinventarioactualizado2/CSS/estiloinicio.css">
+    <title>Añadir Producto</title>
+  </head>
+
+  <body>
+    <div class="tablaañadir">
+      <form id="formañadir" name="formañadir" method="post" action="../PHP/editar.php">
+        <img src="../imagenes/crayola.png" width="150rem" /><br />
+        <div class="titulo">Editar un Producto</div>
+        <label for="codigo">Código del Producto:</label>
+        <input
+          type="number"
+          name="codigo"
+          class="datos"
+          placeholder="Ingresar código del producto"
+          required
+        /><br />
+        <label for="nombre">Nuevo nombre:</label>
+        <input
+          type="text"
+          name="nombre"
+          class="datos"
+          placeholder="Ingresar nombre del producto"
+        /><br />
+        <label for="categoria">Nueva categoría:</label>
+        <select name="categoria" id="categoria" class="seleccionar">
+          <option value="">Seleccione</option>
+          <option value="Papelería">Papelería</option>
+          <option value="Piñatería">Piñatería</option>
+          <option value="Tecnología">Tecnología</option></select
+        ><br />
+        <label for="cantidad">Nueva cantidad:</label><br />
+        <input
+          type="number"
+          name="cantidad"
+          class="datos"
+          placeholder="Ingresar cantidad del producto"
+        /><br />
+        <label for="valor">Nuevo valor:</label><br />
+        <input
+          type="number"
+          name="valor"
+          class="datos"
+          placeholder="Ingresar valor del producto"
+        /><br />
+        <input
+          type="submit"
+          name="btniniciar"
+          class="btniniciar"
+          value="Confirmar"
+        />
+      </form>
+    </div>
+  </body>
+</html>

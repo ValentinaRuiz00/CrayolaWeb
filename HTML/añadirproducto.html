@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estiloinicio.css">
+    <link rel="stylesheet" href="http://localhost/proyectoinventarioactualizado2/CSS/estiloinicio.css">
+    <title>Añadir Producto</title>
+</head>
+
+<body>
+    <div class="tablaañadir">
+        <form id="formañadir" name="formañadir" method="post" action="../PHP/añadir.php">
+            <img src="../imagenes/crayola.png" width="150rem"><br>
+            <div class="titulo">
+                Añadir un Producto
+            </div> 
+            <label for="codigo">Código del Producto:</label>
+            <input type="number" name="codigo" class="datos" placeholder="Ingresar código del producto" required><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" class="datos" placeholder="Ingresar nombre del producto" required><br>
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria" class="seleccionar" required>
+                <option value="">Seleccione</option>
+                <option value="Papelería">Papelería</option>
+                <option value="Piñatería">Piñatería</option>
+                <option value="Tecnología">Tecnología</option>
+            </select>
+            <label for="cantidad">Cantidad:</label><br>
+            <input type="number" name="cantidad" class="datos" placeholder="Ingresar cantidad del producto" required><br>
+            <label for="valor">Valor:</label><br>
+            <input type="number" name="valor" class="datos" placeholder="Ingresar valor del producto" required><br>
+            <input type="submit" name="btniniciar" class="btniniciar" value="Añadir">
+        </form>
+    </div>
+</body>
+
+</html>

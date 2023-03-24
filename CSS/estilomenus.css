@@ -1,0 +1,239 @@
+:root
+{
+    --color1: rgb(142, 93, 107);
+    --color2: rgb(121, 72, 86);
+    --color3: rgb(137, 74, 92);
+    --color4: rgb(214, 214, 214);
+    --color5: rgb(255, 255, 255); 
+}
+body.inicio
+{
+    overflow: hidden;
+}
+.brand-logo
+{
+    margin-left: 1rem;
+}
+.criterios
+{
+    height: 5rem;
+}
+.col
+{
+    padding: 0rem;
+}
+.chip
+{
+    margin-top: 0.5rem;
+}
+.chip1
+{
+    background-color: rgba(135, 219, 212, 0.671);
+}
+.chip2
+{
+    background-color: rgb(255, 254, 176);
+}
+.chip3
+{
+    background-color: rgb(255, 161, 161);
+}
+.chip4
+{
+    background-color: rgb(193, 250, 170);
+}
+.chip5
+{
+    background-color: rgb(236, 162, 255);
+}
+.cant
+{
+    margin-top: 2rem;
+}
+
+
+
+.productos
+{
+    margin: 5rem;
+}
+.logo2
+{
+    position: relative;
+    top: 0.6rem;
+}
+
+
+
+
+
+
+
+.prueba1
+{
+    background-color: var(--color1);
+    height: 80rem;
+}
+.prueba2
+{
+    background-color: var(--color4);
+    height: 80rem;
+}
+.prueba3
+{
+    position:fixed;
+    top: 4rem;
+    width: 16.66%;
+    z-index: 2;
+}
+.menu
+{
+    position: fixed;
+    left: 0rem;
+    height: 4rem;
+    width: 4rem;
+}
+.menubtn
+{
+    background-color: var(--color1);
+    width: 100%;
+    box-shadow: 0rem;
+    text-align: left;
+    box-shadow: 0rem 0rem;
+}
+.menubtn:hover
+{
+    background-color: var(--color3);
+}
+.nombre
+{
+    background-color: var(--color2);
+}
+.opciones
+{
+    background-color: var(--color2);
+    height: 3rem;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 0rem 0rem;
+}
+.opciones:hover
+{
+    background-color: var(--color3);
+}
+.barra
+{
+    position: fixed;
+    background-color: var(--color2);
+    z-index: 2;
+}
+.cards1
+{
+    position:fixed;
+    top: 7rem;
+    border-radius: 3px;
+    width: 19%;
+    height: 10rem;
+    border: 0rem;
+    box-shadow: none;
+}
+
+
+.box1
+{
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--color3);
+}
+.card-title
+{
+    color: var(--color3);
+}
+.center1
+{
+    margin: 1rem;
+}
+
+
+
+
+
+
+.cards2
+{
+    position:fixed;
+    top: 5rem;
+    border-radius: 3px;
+    width: 55%;
+    border: 0rem;
+    box-shadow: none;
+    height: 30rem;
+    overflow: scroll;
+}
+.cards3
+{
+    position:fixed;
+    top: 5rem;
+    border-radius: 3px;
+    width: 26%;
+    height: 30rem;
+    border: 0rem;
+    box-shadow: none;
+    overflow: scroll;
+}
+.cards4
+{
+    position:fixed;
+    top: 5rem;
+    border-radius: 3px;
+    width: 40%;
+    border: 0rem;
+    box-shadow: none;
+    height: 30rem;
+    overflow: scroll;
+}
+.cards5
+{
+    position:fixed;
+    top: 5rem;
+    border-radius: 3px;
+    width: 40%;
+    height: 30rem;
+    border: 0rem;
+    box-shadow: none;
+    overflow: scroll;
+}
+.box2
+{
+    height: 4rem;
+    width: 100%;
+    background-color: var(--color3);
+}
+
+
+.titulo1
+{
+    position: relative;
+    top: 0.6rem;
+    left: 1rem;
+    color: var(--color5)
+}
+.cant2
+{
+    text-align: right;
+}
+.btn1
+{
+    position: absolute;
+    bottom: 1rem;
+    left: -0.5rem;
+    color: var(--color5);
+    background-color: var(--color3);
+}
+.btn1:hover
+{
+    background-color: var(--color4);
+}
